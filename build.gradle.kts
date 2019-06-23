@@ -7,7 +7,7 @@ plugins {
 
 lovely {
     gitProject()
-    dockerProject("graphql-voyager")
+    dockerProject("natterstefan/graphql-voyager")
 }
 
 with(lovely.dockerFiles) {
