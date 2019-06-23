@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+  app:
+    image: graphql-voyager:dev
+    ports:
+      - "3000:3000"
+    environment:
+      # example url, must point to your graphql server/api
+      GRAPHQL_URL: http://localhost:8000

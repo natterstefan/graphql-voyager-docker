@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+
+# Gradle
+.gradle
+build
+
+# Development
+node_modules
+tmp
+
+# Deployment
+.env
