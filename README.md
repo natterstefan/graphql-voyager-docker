@@ -1,5 +1,7 @@
 # Graphql-Voyager-Docker
 
+![MicroBadger Size](https://img.shields.io/microbadger/image-size/natterstefan/graphql-voyager.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/natterstefan/graphql-voyager.svg)
+
 Simple docker image for [GraphQL voyager](https://github.com/APIs-guru/graphql-voyager).
 
 ## Usage
@@ -12,13 +14,15 @@ version: "3.5"
 
 services:
   app:
-    image: graphql-voyager
+    image: natterstefan/graphql-voyager
     ports:
       - "3000:3000"
     environment:
       # example url, must point to your graphql server/api
       GRAPHQL_URL: http://localhost:8000
 ```
+
+Now open Voyager at [http://localhost:3000](http://localhost:3000).
 
 ## How to build the docker image
 
