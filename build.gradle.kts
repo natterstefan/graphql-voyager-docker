@@ -2,7 +2,7 @@ import com.lovelysystems.gradle.isProductionVersion
 
 plugins {
     base
-    id("com.lovelysystems.gradle") version ("1.1.0")
+    id("com.lovelysystems.gradle") version ("1.6.2")
 }
 
 lovely {
@@ -14,8 +14,8 @@ with(lovely.dockerFiles) {
     from(".") {
         include(
             "package.json",
-            "package-lock.json",
-            "src/**"
+            "src/**",
+            "yarn.lock"
         )
     }
     from("docker/Dockerfile")

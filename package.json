@@ -4,10 +4,16 @@
   "description": "Docker Image for APIs-guru/graphql-voyager",
   "main": "src/index.js",
   "private": true,
+  "engines": {
+    "node": "^14.x || ^16.3.0",
+    "yarn": "^1.22.0"
+  },
   "scripts": {
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "prettier -c .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "is-ci || husky install"
   },
   "repository": {
     "type": "git",
@@ -25,11 +31,14 @@
   },
   "homepage": "https://github.com/natterstefan/graphql-voyager-docker#readme",
   "dependencies": {
-    "dotenv": "^8.0.0",
-    "express": "^4.17.1",
-    "graphql-voyager": "^1.0.0-rc.27"
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "graphql-voyager": "^1.0.0-rc.31"
   },
   "devDependencies": {
-    "all-contributors-cli": "^6.7.0"
+    "all-contributors-cli": "^6.20.0",
+    "husky": "^7.0.0",
+    "is-ci": "^3.0.1",
+    "prettier": "^2.5.1"
   }
 }

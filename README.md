@@ -1,8 +1,9 @@
 # Graphql-Voyager-Docker
 
-![MicroBadger Size](https://img.shields.io/microbadger/image-size/natterstefan/graphql-voyager.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/natterstefan/graphql-voyager.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/natterstefan/graphql-voyager.svg)](https://hub.docker.com/r/natterstefan/graphql-voyager)
 
-Simple docker image for [GraphQL voyager](https://github.com/APIs-guru/graphql-voyager).
+Simple docker image for
+[GraphQL voyager](https://github.com/APIs-guru/graphql-voyager).
 
 ## Usage
 
@@ -10,13 +11,13 @@ Create or extend your `docker-compose.yml` configuration and start the app later
 with: `docker-compose up`.
 
 ```yml
-version: "3.5"
+version: '3.5'
 
 services:
   app:
-    image: natterstefan/graphql-voyager
+    image: natterstefan/graphql-voyager:dev
     ports:
-      - "3000:3000"
+      - '3000:3000'
     environment:
       # example url, must point to your graphql server/api
       GRAPHQL_URL: http://localhost:8000
@@ -26,7 +27,8 @@ Now open Voyager at [http://localhost:3000](http://localhost:3000).
 
 ## How to build the docker image
 
-I use the [lovely-gradle-plugin created by Lovely Systems](https://github.com/lovelysystems/lovely-gradle-plugin)
+I use the
+[lovely-gradle-plugin created by Lovely Systems](https://github.com/lovelysystems/lovely-gradle-plugin)
 to build and publish the docker image. It is simple and works like this:
 
 ```bash
@@ -55,4 +57,6 @@ git push --tags
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!
