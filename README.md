@@ -15,7 +15,7 @@ version: '3.5'
 
 services:
   app:
-    image: natterstefan/graphql-voyager:dev
+    image: natterstefan/graphql-voyager:0.2.0
     ports:
       - '3000:3000'
     environment:
